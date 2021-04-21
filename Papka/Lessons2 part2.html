@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Forms </title>
+</head>
+
+<body>
+    <h1> Shopping List </h1>
+    <form action>
+        <fieldset>
+            <legend> Registration</legend>
+            <label for="name"> Enter Your Name<br> </label>
+            <input type="text" name="username" id="name"><br><br><br>
+            <label for="phone"> Enter Your Phone Number <br></label>
+            <input type="phone" name="telephone" id="phone"><br><br><br>
+            <label for="email"> Enter Your Email <br></label>
+            <input type="email" name="poshta" id="poshta"><br><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> What to Buy? </legend>
+            <label for="shop"> Choose where you want to buy? </label> <br>
+            <select name="shop" id="shops">
+                <option value="silpo"> Silpo </option>
+                <option value="novus"> Novus</option>
+                <option value="billa"> Billa </option>
+                <option hidden disabled selected> Chose shop </option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> When you want to have a delivery?</legend>
+            <input type="radio" name="days" id="op1" value="today">
+            <label for="op1"> Today </label> <br>
+            <input type="radio" name="days" id="op2" value="next">
+            <label for="op2"> Next day</label><br>
+            <input type="radio" name="days" id="opt3" value="next week">
+            <label for="opt3"> Next Week </label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <legend> You can choose specific date on Calendar </legend> <br>
+            <label for="delivery"> Choose date </label>
+            <input type="date" name="delivery date" id="del">
+        </fieldset>
+
+        <fiedset>
+            <legend> Additional Information</legend>
+            <label for="message"> Write here</label>
+            <br>
+            <textarea name="someMessage" id="sms"></textarea>
+
+        </fiedset>
+        <fieldst>
+            <legend>Choose Products</legend>
+            <input type="checkbox" name="produts" id="bread">
+            <label for="bread"> Bread </label> <br>
+            <input type="checkbox" name="products" id="milk">
+            <label for="milk"> Milk </label>
+        </fieldst>
+        <br><br><br>
+        <input type="checkbox" name="termsofuse" id="terms">
+        <label for="terms"> I agree with the privacy policy. </label>
+        <br>
+        <br>
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+
+</html>
